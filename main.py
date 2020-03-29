@@ -5,10 +5,10 @@ import streamlit as st
 
 def get_schedule_df():
     columns = [x for x in range(1,31)]
-    url_1 = 'https://github.com/joshmiller32/baseball_schedule_analysis/blob/master/Data/110_game_schedule.csv'
-    url_2 = 'https://github.com/joshmiller32/baseball_schedule_analysis/blob/master/Data/140_game_schedule.csv'
-    url_3 = 'https://github.com/joshmiller32/baseball_schedule_analysis/blob/master/Data/162_game_schedule.csv'
-    url_4 = 'https://github.com/joshmiller32/baseball_schedule_analysis/blob/master/Data/81_game_schedule.csv'
+    url_1 = 'https://raw.githubusercontent.com/joshmiller32/baseball_schedule_analysis/master/Data/110_game_schedule.csv'
+    url_2 = 'https://raw.githubusercontent.com/joshmiller32/baseball_schedule_analysis/master/Data/140_game_schedule.csv'
+    url_3 = 'https://raw.githubusercontent.com/joshmiller32/baseball_schedule_analysis/master/Data/162_game_schedule.csv'
+    url_4 = 'https://raw.githubusercontent.com/joshmiller32/baseball_schedule_analysis/master/Data/81_game_schedule.csv'
     schedule_81= pd.read_csv(url_4)
     schedule_110 = pd.read_csv(url_1)
     schedule_140 = pd.read_csv(url_2)
