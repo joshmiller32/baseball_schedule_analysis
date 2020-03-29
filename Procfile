@@ -1,1 +1,1 @@
-web : streamlit run --server.enableCORS false --server.port 5000 main.py
+web: sh create_config.sh && streamlit run main.py
