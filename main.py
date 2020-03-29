@@ -3,8 +3,8 @@ import plotly.figure_factory as ff
 import plotly.graph_objects as go
 import streamlit as st
 
+@st.cache(persist = True, suppress_st_warning = True)
 def get_schedule_df():
-    columns = [x for x in range(1,31)]
     url_1 = 'https://raw.githubusercontent.com/joshmiller32/baseball_schedule_analysis/master/Data/110_game_schedule.csv'
     url_2 = 'https://raw.githubusercontent.com/joshmiller32/baseball_schedule_analysis/master/Data/140_game_schedule.csv'
     url_3 = 'https://raw.githubusercontent.com/joshmiller32/baseball_schedule_analysis/master/Data/162_game_schedule.csv'
