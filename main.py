@@ -9,10 +9,10 @@ def get_schedule_df():
     url_2 = 'https://github.com/joshmiller32/baseball_schedule_analysis/blob/master/Data/140_game_schedule.csv'
     url_3 = 'https://github.com/joshmiller32/baseball_schedule_analysis/blob/master/Data/162_game_schedule.csv'
     url_4 = 'https://github.com/joshmiller32/baseball_schedule_analysis/blob/master/Data/81_game_schedule.csv'
-    schedule_81= pd.read_csv(url_4, usecols = columns)
-    schedule_110 = pd.read_csv(url_1, usecols = columns)
-    schedule_140 = pd.read_csv(url_2, usecols = columns)
-    schedule_162 = pd.read_csv(url_3, usecols = columns)
+    schedule_81= pd.read_csv(url_4)
+    schedule_110 = pd.read_csv(url_1)
+    schedule_140 = pd.read_csv(url_2)
+    schedule_162 = pd.read_csv(url_3)
     dataframes_names = [schedule_81, schedule_110, schedule_140, schedule_162]
     dataframes = []
     for df in dataframes_names:
