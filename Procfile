@@ -1,1 +1,1 @@
-web : sh create_config.sh && streamlit run main.py
+web : sh create_config.sh && streamlit run main.py runserver 0.0.0.0:5000
