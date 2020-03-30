@@ -67,9 +67,9 @@ def main():
     games_500_82_season['Colors'].update(pd.Series(color_dict))
     colors = list(games_500_82_season['Colors'].values)
 
-    fig = go.Figure(go.Bar(x = games_500_82_season['Games'], y = games_500_82_season.index, orientation = 'h', marker_color = colors  ))
+    fig = go.Figure(go.Bar(x = games_500_82_season['Games'], y = games_500_82_season.index, orientation = 'h', marker_color = colors))
     fig.update_layout(autosize = False, height = 750, title_text = 'Games VS Opponents With .500 or Better Win Pct - 82 Game Season', 
-            xaxis = dict(title = 'Games'), title_x = 0.5)
+            xaxis = dict(title = 'Games'), title_x = 0.5, dragmode = False)
     st.plotly_chart(fig)
 
     # 110 game season
