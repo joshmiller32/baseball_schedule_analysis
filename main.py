@@ -82,7 +82,7 @@ def main():
 
     fig = go.Figure(go.Bar(x = games_500_110_season['Games'], y = games_500_110_season.index, orientation = 'h', marker_color = colors  ))
     fig.update_layout(autosize = False, height = 750, title_text = 'Games VS Opponents With .500 or Better Win Pct - 110 Game Season', 
-                xaxis = dict(title = 'Games'), title_x = 0.5)
+                xaxis = dict(title = 'Games'), title_x = 0.5, dragmode = False)
     st.plotly_chart(fig)
 
     # 140 game season
@@ -95,7 +95,7 @@ def main():
 
     fig = go.Figure(go.Bar(x = games_500_140_season['Games'], y = games_500_140_season.index, orientation = 'h', marker_color = colors  ))
     fig.update_layout(autosize = False, height = 750, title_text = 'Games VS Opponents With .500 or Better Win Pct - 140 Game Season', 
-                xaxis = dict(title = 'Games'), title_x = 0.5)
+                xaxis = dict(title = 'Games'), title_x = 0.5, dragmode = False)
     st.plotly_chart(fig)
 
     # 162 game season
@@ -108,7 +108,7 @@ def main():
 
     fig = go.Figure(go.Bar(x = games_500_162_season['Games'], y = games_500_162_season.index, orientation = 'h', marker_color = colors  ))
     fig.update_layout(autosize = False, height = 750, title_text = 'Games VS Opponents With .500 or Better Win Pct - 162 Game Season', 
-                xaxis = dict(title = 'Games'), title_x = 0.5)
+                xaxis = dict(title = 'Games'), title_x = 0.5, dragmode =False)
     st.plotly_chart(fig)
 
     # Plots for PCT of games against opponents with .500 or better projected record
@@ -125,7 +125,7 @@ def main():
 
     fig = go.Figure(go.Bar(x = pct_of_games_against_500_82['PCT'], y = pct_of_games_against_500_82.index, orientation = 'h', marker_color = colors  ))
     fig.update_layout(autosize = False, height = 750, title_text = 'Percentage of Games Against Teams Over .500 - 82 Game Season', 
-                xaxis = dict(title = 'Percent'), title_x = 0.5)
+                xaxis = dict(title = 'Percent'), title_x = 0.5, dragmode = False)
     st.plotly_chart(fig)
 
     # 110 game season
@@ -139,7 +139,7 @@ def main():
 
     fig = go.Figure(go.Bar(x = pct_of_games_against_500_110['PCT'], y = pct_of_games_against_500_110.index, orientation = 'h', marker_color = colors))
     fig.update_layout(autosize = False, height = 750, title_text = 'Percentage of Games Against Teams Over .500 - 110 Game Season', 
-                xaxis = dict(title = 'Percent'), title_x = 0.5)
+                xaxis = dict(title = 'Percent'), title_x = 0.5, dragmode = False)
     st.plotly_chart(fig)
 
     # 140 game season 
@@ -153,7 +153,7 @@ def main():
 
     fig = go.Figure(go.Bar(x = pct_of_games_against_500_140['PCT'], y = pct_of_games_against_500_140.index, orientation = 'h', marker_color = colors))
     fig.update_layout(autosize = False, height = 750, title_text = 'Percentage of Games Against Teams Over .500 - 140 Game Season', 
-                xaxis = dict(title = 'Percent'), title_x = 0.5)
+                xaxis = dict(title = 'Percent'), title_x = 0.5, dragmode = False)
     st.plotly_chart(fig)
 
     # 162 game season
@@ -167,7 +167,7 @@ def main():
 
     fig = go.Figure(go.Bar(x = pct_of_games_against_500_162['PCT'], y = pct_of_games_against_500_162.index, orientation = 'h', marker_color = colors))
     fig.update_layout(autosize = False, height = 750, title_text = 'Percentage of Games Against Teams Over .500 - 162 Game Season', 
-                xaxis = dict(title = 'Percent'), title_x = 0.5)
+                xaxis = dict(title = 'Percent'), title_x = 0.5, dragmode = False)
     st.plotly_chart(fig)
 
     # Plots for opponents combined winning percentage
@@ -184,7 +184,7 @@ def main():
     colors = list(opp_win_pct_82['Colors'].values)
 
     fig = go.Figure(go.Bar(x = opp_win_pct_82['Opp_Win_Pct'], y = opp_win_pct_82.index, orientation = 'h', marker_color = colors))
-    fig.update_layout(autosize = False, height = 750, title_text = 'Opponents Combined Win Pct - 82 Game Season', xaxis = dict(title = 'Win Pct'), title_x = 0.5)
+    fig.update_layout(autosize = False, height = 750, title_text = 'Opponents Combined Win Pct - 82 Game Season', xaxis = dict(title = 'Win Pct'), title_x = 0.5, dragmode = False)
     st.plotly_chart(fig)
 
     # 110 game season
@@ -198,7 +198,7 @@ def main():
 
 
     fig = go.Figure(go.Bar(x = opp_win_pct_110['Opp_Win_Pct'], y = opp_win_pct_110.index, orientation = 'h', marker_color = colors))
-    fig.update_layout(autosize = False, height = 750, title_text = 'Opponents Combined Win Pct - 110 Game Season', xaxis = dict(title = 'Win Pct'), title_x = 0.5)
+    fig.update_layout(autosize = False, height = 750, title_text = 'Opponents Combined Win Pct - 110 Game Season', xaxis = dict(title = 'Win Pct'), title_x = 0.5, dragmode = False)
     st.plotly_chart(fig)
 
     # 140 game season 
@@ -212,7 +212,7 @@ def main():
 
 
     fig = go.Figure(go.Bar(x = opp_win_pct_140['Opp_Win_Pct'], y = opp_win_pct_140.index, orientation = 'h', marker_color = colors))
-    fig.update_layout(autosize = False, height = 750, title_text = 'Opponents Combined Win Pct - 140 Game Season', xaxis = dict(title = 'Win Pct'), title_x = 0.5)
+    fig.update_layout(autosize = False, height = 750, title_text = 'Opponents Combined Win Pct - 140 Game Season', xaxis = dict(title = 'Win Pct'), title_x = 0.5, dragmode = False)
     st.plotly_chart(fig)
 
     # 162 game season
@@ -226,7 +226,7 @@ def main():
 
 
     fig = go.Figure(go.Bar(x = opp_win_pct_162['Opp_Win_Pct'], y = opp_win_pct_162.index, orientation = 'h', marker_color = colors))
-    fig.update_layout(autosize = False, height = 750, title_text = 'Opponents Combined Win Pct - 162 Game Season', xaxis = dict(title = 'Win Pct'), title_x = 0.5)
+    fig.update_layout(autosize = False, height = 750, title_text = 'Opponents Combined Win Pct - 162 Game Season', xaxis = dict(title = 'Win Pct'), title_x = 0.5, dragmode = False)
     st.plotly_chart(fig)
 
 if __name__ == "__main__":
